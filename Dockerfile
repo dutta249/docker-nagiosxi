@@ -11,14 +11,14 @@
 
 # Base images
 FROM     centos:centos6
-MAINTAINER Yongbok Kim <ruo91@yongbok.net>
+MAINTAINER Gautam <gautam01dutta07@gmail.com>
 
 # WorkDIR
 ENV SRC_DIR /opt
 WORKDIR $SRC_DIR
 
 # Nagios XI
-RUN curl -LO "http://assets.nagios.com/downloads/nagiosxi/xi-latest.tar.gz" \
+RUN curl -LO "https://assets.nagios.com/downloads/nagiosxi/xi-latest.tar.gz" \
  && tar xzvf xi-latest.tar.gz
 
 # Disable firewall
